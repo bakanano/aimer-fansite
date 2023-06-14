@@ -1,5 +1,3 @@
-Certainly! Here's an updated version of the README file that includes the details about the Aimer compilation album "星の消えた夜に":
-
 # 星の消えた夜に - Aimer Compilation Album Fansite
 
 A fansite dedicated to the compilation album "星の消えた夜に" by the Japanese singer Aimer. Using ReactJS, provides a platform to showcase images from the promotional video of the album, display a countdown to Aimer's birthday.
