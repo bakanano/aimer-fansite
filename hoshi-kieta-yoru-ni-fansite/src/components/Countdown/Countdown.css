@@ -1,0 +1,9 @@
+.countdownDisplay {
+    padding: 10em;
+}
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}

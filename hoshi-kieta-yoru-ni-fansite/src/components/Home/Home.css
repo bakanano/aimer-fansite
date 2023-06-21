@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    flex-grow: 1;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.aimer-hero {
+    width: 15%;
+    height: auto;
+}
+
+.name {
+    border: 3px solid #F2AE30;
+    border-radius: 10px;
+    padding: 45px;
+}
+
+.name > h1 {
+    font-size: 100px;
+}
+
+.name > p {
+    color: #0B0F26
+}
+
+.bio {
+    padding: 10px;
+    margin: 5px;
+}
+
+.info-card {
+    border: 3px solid #F2AE30; 
+    border-radius: 20px;
+    margin: 50px;
+}
+
+.info-card > h2 {
+    font-size: 50px;
+    padding: 20px;
+}
+
+.album, .info {
+    padding: 20px;
+}
