@@ -16,9 +16,20 @@ body {
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    position: relative;
+}
+
+.info-card {
+    border: 3px solid var(--steel);
+    border-radius: 10px;
+    background-color: var(--purple);
+}
+
+.info-card > h2 {
+    font-size: 50px;
+    padding: 20px;
 }
 
 .hero {
@@ -27,16 +38,10 @@ footer {
     justify-content: space-around;
     width: 100%;
 }
+
 .aimer-hero {
     width: 15%;
     height: auto;
-}
-
-.name {
-    border: 3px solid var(--steel);
-    border-radius: 10px;
-    padding: 45px;
-    background-color: var(--purple);
 }
 
 .name > h1 {
@@ -50,18 +55,6 @@ footer {
 .bio {
     padding: 10px;
     margin: 5px;
-}
-
-.info-card {
-    border: 3px solid var(--steel); 
-    border-radius: 10px;
-    margin: 50px;
-    background-color: var(--purple);
-}
-
-.info-card > h2 {
-    font-size: 50px;
-    padding: 20px;
 }
 
 .album, .info {

@@ -7,7 +7,7 @@ export default function Home() {
         <div className="container">
             <section className="hero">
                 <img src={Aimer} alt="Aimer" className="aimer-hero"></img>
-                    <div className="name">
+                    <div className="name info-card">
                         <h1>Aimer</h1>
                         <p>Aimer is love, Aimer is life</p>
                     </div>
@@ -15,12 +15,12 @@ export default function Home() {
             <section className="info-card">
                 <h2>Who is Aimer?</h2>
                 <div className="bio">
-                    <div className="info">
+                    <div>
                         <h3>Background</h3>
                         <p>
                             Aimer is a Japanese singer known for her husky voice. Her stagename "Aimer" comes from the French verb meaning "to love".
                             Aimer started her music career by releasing a concept album "Your Favorite Things" featuring song covers of popular artists such as
-                            Lady Gaga's big hit "Poker Face" and Coldplay's "Viva La Vida". Aimer made her major debut on 7 September 20211 with her single "六等星の夜/悲しみはオーロラに/TWINKLE TWINKLE LITTLE STAR" and has been on the rise ever since. Aimer writes the majority of her songs as shown in credits as "aimerrhythm".
+                            Lady Gaga's big hit "Poker Face" and Coldplay's "Viva La Vida". Aimer made her major debut on 7 September 2011 with her single "六等星の夜/悲しみはオーロラに/TWINKLE TWINKLE LITTLE STAR" and has been on the rise ever since. Aimer writes the majority of her songs as shown in credits as "aimerrhythm".
                         </p>
                     </div>
                     <div className="album">
@@ -30,7 +30,6 @@ export default function Home() {
                 </div>
             </section>
             <Countdown/>
-            <section clasName="viewer"></section>
             <footer><a href="https://github.com/bakanano" target="_blank">@bakanano</a></footer>
         </div>
     );
