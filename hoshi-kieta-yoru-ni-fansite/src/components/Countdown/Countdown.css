@@ -1,9 +1,15 @@
+@import "../../colors.css";
+
 .countdownDisplay {
-    padding: 10em;
+    border: 3px solid var(--steel);
+    border-radius: 10px;
+    background-color: var(--purple);
 }
+
 .countdown {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+
 }

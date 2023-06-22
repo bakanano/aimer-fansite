@@ -1,3 +1,5 @@
+@import "../../colors.css";
+
 *,
 *::before,
 *::after {
@@ -10,8 +12,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 50px;
-    flex-grow: 1;
+    padding: 25px;
 }
 
 footer {
@@ -32,9 +33,10 @@ footer {
 }
 
 .name {
-    border: 3px solid #F2AE30;
+    border: 3px solid var(--steel);
     border-radius: 10px;
     padding: 45px;
+    background-color: var(--purple);
 }
 
 .name > h1 {
@@ -42,7 +44,7 @@ footer {
 }
 
 .name > p {
-    color: #0B0F26
+    color: var(--silvery);
 }
 
 .bio {
@@ -51,9 +53,10 @@ footer {
 }
 
 .info-card {
-    border: 3px solid #F2AE30; 
-    border-radius: 20px;
+    border: 3px solid var(--steel); 
+    border-radius: 10px;
     margin: 50px;
+    background-color: var(--purple);
 }
 
 .info-card > h2 {

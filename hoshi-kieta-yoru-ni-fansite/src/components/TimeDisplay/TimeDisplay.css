@@ -1,3 +1,12 @@
+.timeDisplay {
+    padding: 25px;
+}
+
 .countdownValue {
     font-size: 65px;
+}
+
+.type {
+    font-size: 15px;
+    font-weight: bold;
 }

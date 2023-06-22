@@ -3,7 +3,7 @@ import TimeDisplay from "../TimeDisplay/TimeDisplay";
 import "./Countdown.css";
 
 export default function Countdown() {
-    const releaseDate = new Date("2022-01-26");
+    const releaseDate = new Date("2023-09-07");
     const [timeSince, setTimeSince] = useState(getTimeSince());
 
     function getTimeSince() {
@@ -35,14 +35,13 @@ export default function Countdown() {
 
     return (
         <div className="countdownDisplay">
-            <h4>Hoshi no Kieta Yoru ni was released</h4>
+            <h4>Days until Aimer's birthday...</h4>
             <div className="countdown">
                 <TimeDisplay value={timeSince.days} type={'Days'}/>
                 <TimeDisplay value={timeSince.hours} type={'Hours'}/>
                 <TimeDisplay value={timeSince.minutes} type={'Mins'}/>
                 <TimeDisplay value={timeSince.seconds} type={'Seconds'}/>
             </div>
-            <h4>ago</h4>
         </div>
     );
 }
