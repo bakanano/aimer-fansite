@@ -34,7 +34,7 @@ export default function Countdown() {
     }, [])
 
     return (
-        <div className="countdownDisplay">
+        <div className=" countdownDisplay info-card">
             <h4>Days until Aimer's birthday...</h4>
             <div className="countdown">
                 <TimeDisplay value={timeSince.days} type={'Days'}/>

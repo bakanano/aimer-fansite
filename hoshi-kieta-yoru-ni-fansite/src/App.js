@@ -1,10 +1,16 @@
 import './App.css';
-import Home from "./components/Home/Home.jsx";
+import {Home} from "./pages/Home";
+import {Route, Routes} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+        <Routes>
+          <Route path="/aimer">
+            <Home/>
+          </Route>
+        </Routes>
+
     </div>
   );
 }

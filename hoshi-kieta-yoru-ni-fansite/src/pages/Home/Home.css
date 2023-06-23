@@ -16,19 +16,26 @@ body {
 }
 
 footer {
-    width: 100%;
-    font-size: 18px;
-    position: relative;
+    display: block;
+    border-bottom: medium none;
+    border-right: medium none;
+    border-left: medium none;
+    border-radius: 0px;
 }
 
 .info-card {
     border: 3px solid var(--steel);
     border-radius: 10px;
     background-color: var(--purple);
+    padding: 10px;
 }
 
 .info-card > h2 {
     font-size: 50px;
+    padding: 20px;
+}
+
+.bio {
     padding: 20px;
 }
 
@@ -50,11 +57,6 @@ footer {
 
 .name > p {
     color: var(--silvery);
-}
-
-.bio {
-    padding: 10px;
-    margin: 5px;
 }
 
 .album, .info {

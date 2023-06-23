@@ -1,10 +1,11 @@
 import Aimer from "../../assets/images/aimer__.png";
 import "./Home.css";
-import Countdown from "../Countdown/Countdown"
+import Countdown from "../../components/Countdown/Countdown"
+import Cards from "../../components/Cards/Cards";
 
 export default function Home() {
     return(
-        <div className="container">
+        <main className="container">
             <section className="hero">
                 <img src={Aimer} alt="Aimer" className="aimer-hero"></img>
                     <div className="name info-card">
@@ -12,9 +13,9 @@ export default function Home() {
                         <p>Aimer is love, Aimer is life</p>
                     </div>
             </section>
-            <section className="info-card">
+            <section className="bio info-card">
                 <h2>Who is Aimer?</h2>
-                <div className="bio">
+                <div>
                     <div>
                         <h3>Background</h3>
                         <p>
@@ -30,7 +31,8 @@ export default function Home() {
                 </div>
             </section>
             <Countdown/>
-            <footer><a href="https://github.com/bakanano" target="_blank">@bakanano</a></footer>
-        </div>
+            <Cards/>
+            <footer className="info-card"><a href="https://github.com/bakanano" target="_blank" rel="noreferrer">@bakanano</a></footer>
+        </main>
     );
 }
