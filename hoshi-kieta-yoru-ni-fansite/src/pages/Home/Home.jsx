@@ -32,7 +32,6 @@ export default function Home() {
             </section>
             <Countdown/>
             <Cards/>
-            <footer className="info-card"><a href="https://github.com/bakanano" target="_blank" rel="noreferrer">@bakanano</a></footer>
         </main>
     );
 }
