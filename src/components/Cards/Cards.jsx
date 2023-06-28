@@ -9,10 +9,10 @@ export default function Cards() {
     return (
         <div className="cardsContainer">
             <Link to="/aimer/gallery">
-                <img src={image01} alt="img1" class="image large"/>
-                <img src={image02} alt="img2" class="image large"/>
-                <img src={image03} alt="img3" class="image large"/>
-                <img src={image04} alt="img4" class="image large"/>
+                <img src={image01} alt="img1" className="image large"/>
+                <img src={image02} alt="img2" className="image large"/>
+                <img src={image03} alt="img3" className="image large"/>
+                <img src={image04} alt="img4" className="image large"/>
             </Link>
         </div>
     );
