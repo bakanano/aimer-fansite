@@ -26,7 +26,7 @@ export default function Home() {
                     </div>
                     <div className="album">
                         <h3>Personal Life</h3>
-                        <p>Aimer annouced her marraige to musician Tobinai Masahiro on 1 January 2023. They have worked together on various songs over the years such as "Omoide wa Kirei de (思い出は綺麗で)", "Kachoufuugetsu (歌鳥風月)" and "Polaris".</p>
+                        <p>Aimer annouced her marraige to musician Tobinai Masahiro on 1 January 2023. They have worked together on various songs over 10 years such as "Omoide wa Kirei de (思い出は綺麗で)", "Kachoufuugetsu (歌鳥風月)" and "Polaris".</p>
                     </div>
                 </div>
             </section>
