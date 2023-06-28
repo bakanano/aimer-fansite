@@ -1,14 +1,11 @@
 @import "../../colors.css";
 
-.cards {
+.cardsContainer {
     position: relative;
     width: 300px;
-    height: 500px;
-    margin: 125px;
+    height: 600px;
     display: flex;
-}
-
-a {
+    padding: 25px 0;
 }
 
 .image {
@@ -17,18 +14,4 @@ a {
     height: 100%;
     outline: 5px solid var(--pearl);
     box-shadow: 0 5px 5px 3px var(--silvery);
-}
-
-.large {
-    transition: width 2s, height 2s, background-color 2s, rotate 2s;
-    border-radius: 10px;
-}
-
-@keyframes move {
-    from {
-        top: 45%;
-    }
-    to {
-        top: 55%;
-    }
 }
