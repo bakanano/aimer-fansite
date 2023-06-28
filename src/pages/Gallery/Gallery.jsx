@@ -1,4 +1,3 @@
-import Picture from "../../components/Picture/Picture";
 import "./Gallery.css";
 export default function Gallery({images}) {
     console.log(images);
