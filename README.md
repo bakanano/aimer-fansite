@@ -1,4 +1,4 @@
-Aimer Fanpage
+Aimer Fanpage - [Live](https://bakanano.github.io/aimer-fansite/#/aimer)
 
 A fanpage dedicated to Japanese singer Aimer.
 ## Pages
