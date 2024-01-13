@@ -3,8 +3,8 @@ import TimeDisplay from "../TimeDisplay/TimeDisplay";
 import "./Countdown.css";
 
 export default function Countdown() {
-    const releaseDate = new Date("2023-09-07");
-    const [timeSince, setTimeSince] = useState(getTimeSince());
+    const releaseDate = new Date(new Date().getFullYear(), 8, 7);
+    const [timeSince, setTimeSince] = useState(getTimeSince);
 
     function getTimeSince() {
         const currentDate = new Date();
@@ -31,7 +31,7 @@ export default function Countdown() {
         return () => {
             clearInterval(interval);
         }
-    }, [])
+    }, [getTimeSince])
 
     return (
         <div className=" countdownDisplay info-card">

@@ -1,5 +1,6 @@
 import {useState} from "react";
 import "./Gallery.css";
+import Modal from "./Modal/Modal";
 
 export default function Gallery({images}) {
     const [currentImage, setCurrentImage] = useState(null);
@@ -27,27 +28,24 @@ export default function Gallery({images}) {
 
     return (
         <div className="mainContainer">
-        <div className="galleryContainer">
-            {images.map(({original, thumbnail}, index) => (
-                <div key={index}>
-                    <img src={thumbnail} alt={`Image ${index}`} className="galleryImage" onClick={(e) => handleImageClick(e, original, index)}/>
-                </div>
-            ))}
-        </div>
+            <div className="galleryContainer">
+                {images.map(({original, thumbnail}, index) => (
+                    <div key={index}>
+                        <img src={thumbnail} alt={`Image ${index}`} className="galleryImage" onClick={(e) => handleImageClick(e, original, index)}/>
+                    </div>
+                ))}
+            </div>
             {currentImage && (
-                <div>
-                    <img 
+                <Modal
                     src={currentImage.src}
-                    style={{
-                        "--top": currentImage.top,
-                        "--left": currentImage.left,
-                        "--initial-width": currentImage.initialWidth,
-                        "--initial-height": currentImage.initialHeight,
-                        "--final-width": currentImage.finalWidth,
-                        "--final-height": currentImage.finalHeight,
-                    }}
-                    />
-                </div>
+                    top={currentImage.top}
+                    left={currentImage.left}
+                    initialWidth={currentImage.initialWidth}
+                    initialHeight={currentImage.initialHeight}
+                    finalWidth={currentImage.finalWidth}
+                    finalHeight={currentImage.finalHeight}
+                    onClose={() => setCurrentImage(null)} // Add onClose prop to close the modal
+                />
             )}
         </div>
     );

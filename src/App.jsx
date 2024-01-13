@@ -13,7 +13,7 @@ function App() {
       </Routes>
       <footer className="info-card">
         By{" "}
-        <a href="https://github.com/bakanano/aimer-fansite" target="_blank">
+        <a href="https://github.com/bakanano/aimer-fansite" target="_blank" rel="noreferrer">
           @bakanano
         </a>
       </footer>
