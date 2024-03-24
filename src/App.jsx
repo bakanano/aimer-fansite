@@ -1,5 +1,5 @@
 import "./App.css";
-import {Route, Routes} from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Gallery from "./pages/Gallery/Gallery";
 import images from "./images";
@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/aimer" element={<Home/>}/>
-        <Route path="/aimer/gallery" element={<Gallery images={images}/>}/>
+        <Route index element={<Home/>}/>
+        <Route path="gallery" element={<Gallery images={images}/>}/>
       </Routes>
       <footer className="info-card">
         By{" "}

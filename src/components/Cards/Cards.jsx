@@ -8,12 +8,14 @@ import "./Cards.css";
 export default function Cards() {
     return (
         <div className="cardsContainer">
-            <Link to="/aimer/gallery">
-                <img src={image01} alt="img1" className="image large"/>
-                <img src={image02} alt="img2" className="image large"/>
-                <img src={image03} alt="img3" className="image large"/>
-                <img src={image04} alt="img4" className="image large"/>
-            </Link>
+            <div className="cardStack">
+                <Link to="/aimer/gallery">
+                    <img src={image01} alt="img1" className="image large"/>
+                    <img src={image02} alt="img2" className="image large"/>
+                    <img src={image03} alt="img3" className="image large"/>
+                    <img src={image04} alt="img4" className="image large"/>
+                </Link>
+            </div>
         </div>
     );
 }
